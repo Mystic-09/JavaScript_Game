@@ -1,24 +1,33 @@
-body {
-    background-color: #be1fcd;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+body{
+    font-family:Arial,sans-serif;
+    margin:20px;
+    background:#f0f0f0
 }
 
-.navbar{
-    background-color: #000000;
-    padding: 10px;
-    
+#game-grid{
+    display:grid;
+    gap:10px
 }
 
-.navbar h1 {
-    color: #ffffff;
-    margin: 0;
-    font-size: 24px;
-    text-align: center;
+.card{
+    width:80px;
+    height:80px;
+    display:grid;
+    place-items:center;
+    background:#ccc;
+    cursor:pointer
 }
 
-.start-button {
-    text-align: center;
-    margin-top: 250px;
+.card.flipped,.card.matched{
+    background:#8f8
 }
+
+button,select
+{
+    margin:4px
+}
+
+#timer,#sum-result{
+    margin-left:8px
+}
+
